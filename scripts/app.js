@@ -118,7 +118,7 @@ var typed1 = new Typed('.main-title', {
 });
 var typed2 = new Typed('.second-title', {
     strings: ['', 'Budujemy <br> Twoją przyszłość'],
-    typeSpeed: 40,
+    typeSpeed: 50,
     backSpeed: 0,
     startDelay: 1500,
     fadeOut: true,
