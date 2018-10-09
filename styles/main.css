@@ -167,6 +167,11 @@ body {
     color: #ffff;
 }
 
+
+.white-text {
+    color: #b7b7b7 !important;
+}
+
 /*---------------------------------------------*/
 /* footer */
 /*---------------------------------------------*/
@@ -312,4 +317,12 @@ span.glyphicon-menu-down:hover {
 
 @keyframes come-in {
     to { transform: translateX(0); }
+}
+
+.typed-cursor{
+    font-size: 30px;
+    opacity: 0;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }

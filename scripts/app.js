@@ -115,6 +115,7 @@ var typed1 = new Typed('.main-title', {
     typeSpeed: 40,
     backSpeed: 0,
     fadeOut: true,
+    onComplete: function(pos, self) { $('.typed-cursor').css('visibility', 'hidden') },
 });
 var typed2 = new Typed('.second-title', {
     strings: ['', 'Budujemy <br> Twoją przyszłość'],
