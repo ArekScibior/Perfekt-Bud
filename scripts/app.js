@@ -107,3 +107,19 @@ win.scroll(function(event) {
         } 
     });   
 }); 
+
+//type.js title
+
+var typed1 = new Typed('.main-title', {
+    strings: ['', 'Zaufaj nam.'],
+    typeSpeed: 40,
+    backSpeed: 0,
+    fadeOut: true,
+});
+var typed2 = new Typed('.second-title', {
+    strings: ['', 'Budujemy <br> Twoją przyszłość'],
+    typeSpeed: 40,
+    backSpeed: 0,
+    startDelay: 1500,
+    fadeOut: true,
+});
