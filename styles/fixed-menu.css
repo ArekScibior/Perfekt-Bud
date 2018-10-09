@@ -1,0 +1,68 @@
+/*---------------------------------------------*/
+/* globalne */
+/*---------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans;
+}
+
+#welcome .header {
+    height: 80px;
+}
+
+.fixed-header {
+    background-color: #fff;
+    height: 75px;
+    line-height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: #000;
+    z-index: 10001;
+    box-shadow: 0 4px 2px -2px gray;
+    transition: all .3s ease-in-out;
+}
+#welcome .logo-main {
+    float: left;
+    height: 20px;
+    width: 100px;
+}
+
+#welcome .logo-main a {
+    line-height: 75px;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+}
+
+.logo-main a:hover {
+    transform: scale(1.1)
+}
+
+.logo-main img {
+    width: 125px;
+}
+#welcome .nav-main {
+    float: right;
+}
+.nav-main li {
+    display: inline-block;
+}
+
+.nav-main a{
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    line-height: 80px;
+    padding-left: 25px;
+    transition: all .4s ease-in-out
+}
+
+.nav-main a:hover {
+    transform: scale(1.2);
+    text-decoration: #fff
+}

@@ -1,0 +1,81 @@
+/*---------------------------------------------*/
+/* moja czcionka */
+/*---------------------------------------------*/
+/*font-family: 'Open Sans', sans; */
+
+/*---------------------------------------------*/
+/* globalne */
+/*---------------------------------------------*/
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+}
+
+
+/*---------------------------------------------*/
+/* sekcja header */
+/*---------------------------------------------*/
+
+#photos {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    background: url('../images/gallery-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#photos .main-text-gallery {
+    margin-top: 175px;
+    margin-bottom: 175px;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+.main-text-gallery img {
+    width: 400px;
+}
+
+
+.text-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+/*------------------------------------*/
+/* CURRENT GALLERY */
+/*------------------------------------*/
+
+#gallery .title {
+    margin-top: 110px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fff
+}
+
+.curr-gallery {
+    display: -webkit-box;
+    display: flex;
+    padding: 20px;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    flex-wrap: wrap;
+}
+
+.curr-gallery a {
+    margin: 10px;
+}
+
+.curr-gallery a img {
+    width: 300px;
+    border-radius: 5px;
+}
