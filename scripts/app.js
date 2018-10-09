@@ -118,9 +118,28 @@ var typed1 = new Typed('.main-title', {
     onComplete: function(pos, self) { $('.typed-cursor').css('visibility', 'hidden') },
 });
 var typed2 = new Typed('.second-title', {
-    strings: ['', 'Budujemy <br> Twoją przyszłość'],
+    strings: ['', 'Zbudujemy <br> Twoją przyszłość'],
     typeSpeed: 50,
     backSpeed: 0,
     startDelay: 1500,
     fadeOut: true,
 });
+
+
+$mainNav.find('a').on('click', function(e) {
+    e.preventDefault();
+    var href = $(this).attr('href');
+    var $target = $(href);
+    
+    $(this).parent().siblings().removeClass('active');
+    $(this).parent().addClass('active');
+    
+    $('html, body').animate({
+        scrollTop : $target.offset().top
+    }, 5000)
+});
+$window.on('scroll', function() {
+    autoAddClassOnScroll();
+});
+    
+autoAddClassOnScroll();
