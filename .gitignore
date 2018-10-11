@@ -3,6 +3,7 @@ backstop_data/
 css/style2.css
 fonts/
 node_modules/
+bower_components/
 sass/
 backstop.json
 gulpfile.js

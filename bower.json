@@ -1,0 +1,11 @@
+{
+  "name": "perfekt-bud",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "~3.2.1",
+    "underscore": "~1.8.2",
+    "moment": "^2.15.2",
+    "bootstrap": "^3.3.7",
+    "typed.js": "^2.0.9"
+  }
+}
