@@ -19,7 +19,6 @@
 
 $(document).scroll(function() {
     var y = $(this).scrollTop();
-    console.log(y)
     //adding arrow on scroll
     if (y > 50) {
         $('.slide-icon').css('visibility', 'visible');
@@ -42,9 +41,6 @@ $(document).scroll(function() {
 
 
     //adding class header-fixed on scroll
-    if(y > 35) {
-
-    }
     if (y < 35) {
         $("#header").removeClass('fixed-header')
         $('.logo').css('color', '#fff')
@@ -59,23 +55,57 @@ $(document).scroll(function() {
         $('.logo-main img').css('width', '125px')
     }
 });
+
+
+
+
+//set scroll slide
 $(".see-more").click(function() {
     $("html, body").animate({ scrollTop: 720 }, "slow");
     return false;
 });
+
+$(".home").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
+
+$(".about-us").click(function() {
+    $("html, body").animate({ scrollTop: 720 }, "slow");
+    return false;
+});
+
+$(".offer").click(function() {
+    $("html, body").animate({ scrollTop: 1200 }, "slow");
+    return false;
+});
+
+$(".why-us").click(function() {
+    $("html, body").animate({ scrollTop: 1860 }, "slow");
+    return false;
+});
+
+$(".contact").click(function() {
+    $("html, body").animate({ scrollTop: 2875 }, "slow");
+    return false;
+});
+
 $('.arrow').click(function() {
     var body = $("html, body");
     body.stop().animate({scrollTop:0}, 'slow', 'swing', function() {
     });
 })
+// end of set scroll slide
 
 
+
+
+// slide in on scroll
 var win = $(window);
     
 var left = $(".left-side");
 var right = $(".right-side");
 
-// slide in on scroll
 left.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
@@ -93,7 +123,6 @@ right.each(function(i, el) {
 win.scroll(function(event) {
     
     left.each(function(i, el) {
-        console.log('working')
         var el = $(el);
         if (el.visible(true)) {
             el.addClass("come-in-left"); 
@@ -107,9 +136,9 @@ win.scroll(function(event) {
         } 
     });   
 }); 
+// end of slide in on scroll
 
 //type.js title
-
 var typed1 = new Typed('.main-title', {
     strings: ['', 'Zaufaj nam.'],
     typeSpeed: 40,
@@ -124,17 +153,4 @@ var typed2 = new Typed('.second-title', {
     startDelay: 1500,
     fadeOut: true,
 });
-
-var $mainNav = $('.main-nav');
-var $window = $(window);
-var $sections = [];
- 
-$mainNav.find('a').on('click', function(e) {
-    e.preventDefault();
-    var href = $(this).attr('href');
-    var $target = $(href);
-       
-    $('html, body').animate({
-        scrollTop : $target.offset().top
-    }, 3000)
-});
+//end of type.js title
