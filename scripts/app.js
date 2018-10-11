@@ -125,21 +125,16 @@ var typed2 = new Typed('.second-title', {
     fadeOut: true,
 });
 
-
+var $mainNav = $('.main-nav');
+var $window = $(window);
+var $sections = [];
+ 
 $mainNav.find('a').on('click', function(e) {
     e.preventDefault();
     var href = $(this).attr('href');
     var $target = $(href);
-    
-    $(this).parent().siblings().removeClass('active');
-    $(this).parent().addClass('active');
-    
+       
     $('html, body').animate({
         scrollTop : $target.offset().top
-    }, 5000)
+    }, 3000)
 });
-$window.on('scroll', function() {
-    autoAddClassOnScroll();
-});
-    
-autoAddClassOnScroll();

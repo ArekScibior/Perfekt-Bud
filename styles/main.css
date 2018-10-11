@@ -326,3 +326,28 @@ span.glyphicon-menu-down:hover {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
+.mobile-nav {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    visibility: hidden
+}
+
+.glyphicon-menu-hamburger {
+    font-size: 40px;
+}
+/* 
+@media all and (min-width:480px) and (max-width:950px) {
+    .nav-main {
+      visibility: hidden;
+    }
+    .mobile-nav {
+        visibility: visible; 
+    }
+    .container {
+        height: 200px;
+    } 
+  } */
