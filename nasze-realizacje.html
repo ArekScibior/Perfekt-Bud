@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/build-list.css" />
+    <link rel="stylesheet" href="./styles/burger-style.css" />
     <link rel="stylesheet" href="./styles/fixed-menu.css">
 </head>
 <body>
@@ -18,7 +19,11 @@
                     <a href="/">
                         <img src="images/logo2.png" alt="Ways10">
                     </a>
-                    <!-- <h1 class="logo">10WAYS</h1> -->
+                    <label class="burger-nav">
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                    </label>
                 </div>
                 <nav class="nav-main ">
                     <ul>
@@ -34,11 +39,11 @@
         </header>
     </section>
 
-    <section id="about" class="second-about" style="margin-top: 75px;">
+    <section id="about" class="second-about first-build">
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="display:flex; justify-content: center; align-items: center; height: 100%;">
+            <div class="row toReverse">
+                <div class="col-md-6 picture-build">
                     <div class="main-text-gallery">
                         <a href="realizacje/krepiec"><img src="images/builds/main/Krepiec.jpg" alt="Krepiec"></a>
                     </div>
@@ -47,7 +52,7 @@
                     <div class="main-article-gallery white-text">
                         <strong>Lokalizacja: Krępiec</strong>
                     </div>
-                    <div class="main-second-article-gallery white-text"> 
+                    <div class="desc-build white-text"> 
                         William III to kolejny ciekawy projekt architektów z biura PRESTIGE. Swoimi wymiarami będzie odpowiedni dla klientów posiadających wąskie działki.
                         Zakres robót przewidywał wykonanie obiektu pod więźbę dachową. &nbsp; <a href="https://projektyprestige.pl/projekt/projekt-domu-wiliam-iii/" target="_.blank">Źródło projektu</a>
                     </div>
@@ -65,11 +70,11 @@
                     <div class="main-article-gallery">
                         <strong>Lokalizacja: Kozubszczyzna</strong>
                     </div>
-                    <div class="main-second-article-gallery"> 
+                    <div class="desc-build"> 
                         Mały (9m x 12m), kameralny dom jednorodzinny z poddaszem użytkowym. 5 sypialni i 2 łazienki które się w nim znajdują oraz stosunkowo duży salon to idealne rozwiązanie dla rodzin posiadających niewielkie działki budowlane.
                     </div>
                 </div>
-                <div class="col-md-6" style="display:flex; justify-content: center; align-items: center; height: 100%;">
+                <div class="col-md-6 picture-build">
                     <div class="main-text-gallery">
                         <a href="realizacje/kozubszczyzna"><img src="images/builds/main/Kozubszczyzna.jpg" alt="Kozubszczyzna"></a>
                     </div>
@@ -82,8 +87,8 @@
     <section id="about" class="second-about">
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="display:flex; justify-content: center; align-items: center; height: 100%;">
+            <div class="row toReverse">
+                <div class="col-md-6 picture-build">
                     <div class="main-text-gallery">
                             <a href="realizacje/niedrzwica"><img src="images/builds/main/Niedrzwica1.jpg" alt="Niedrzwica"></a>
                     </div>
@@ -92,7 +97,7 @@
                     <div class="main-article-gallery white-text">
                         <strong>Lokalizacja: Niedrzwica Duża</strong>
                     </div>
-                    <div class="main-second-article-gallery white-text">  
+                    <div class="desc-build white-text">  
                         Jeden z domów z bazy projektów Z500. Zakres robót przewidywał wykonanie obiektu pod więźbę dachową.
                     </div>
                 </div>
@@ -109,12 +114,12 @@
                     <div class="main-article-gallery">
                         <strong>Lokalizacja: Płouszowice</strong>
                     </div>
-                    <div class="main-second-article-gallery">  
+                    <div class="desc-build">  
                         Dom jednorodzinny z dwoma pełnymi kondygnacjami charakteryzujący się dużymi przeszkleniami i antresolą nad salonem. Realizacja według projektu REWIRA 2 z biura projektów MG Projekt.
                         Zakres robót przewidywał wykonanie obiektu pod więźbę dachową
                     </div>
                 </div>
-                <div class="col-md-6" style="display:flex; justify-content: center; align-items: center; height: 100%;">
+                <div class="col-md-6 picture-build">
                     <div class="main-text-gallery">
                             <a href="realizacje/plouszowice"><img src="images/builds/main/Plouszowice.jpg" alt="Płouszowice"></a>
                     </div>
@@ -127,8 +132,8 @@
     <section id="about" class="second-about">
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="display:flex; justify-content: center; align-items: center; height: 100%;">
+            <div class="row toReverse">
+                <div class="col-md-6 picture-build">
                     <div class="main-text-gallery">
                         <a href="realizacje/klinkier"><img src="images/builds/main/Klinkier.jpg" alt="Klinkier"></a>
                     </div>
@@ -137,7 +142,7 @@
                     <div class="main-article-gallery white-text">
                         <strong>Lokalizacja: Lublin, ul. Metarulgiczna</strong>
                     </div>
-                    <div class="main-second-article-gallery white-text">   
+                    <div class="desc-build white-text">   
                         Zleceniodawcą prac była Polska Korporacja Recyklingu w Lublinie. 
                         Zakres robót obejmował ułożenie 4000 sztuk cegły klinkierowej wzdłuż hali przemysłowej w Lublinie.                    </div>
                 </div>
@@ -150,5 +155,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/typed.js/lib/typed.min.js"></script>
+    <script src="scripts/lightbox.min.js"></script>
+    <script src="scripts/scriptRealization.js"></script>
 </body>    
 </html>
