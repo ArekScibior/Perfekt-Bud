@@ -74,6 +74,10 @@ body {
     text-decoration: #fff
 }
 
+.burger-nav {
+    display: none;
+}
+
 /*---------------------------------------------*/
 /* content */
 /*---------------------------------------------*/
@@ -359,10 +363,104 @@ span.glyphicon-menu-down:hover {
     body {
         min-width: 321px;
     }
-    .container {
-        display: flex;
-        justify-content: center;
+    .nav-main {
+        display: none; 
     }
+    .logo-main a {
+        position: fixed;
+    }
+    #header, .fixed-header {
+        height: 120px;
+        line-height: 105px;
+    }
+
+
+    /* konfiguracja burger-nav */
+    .burger-nav {
+        margin: 20px;
+        padding: 19px 16px;
+        display: inline-block;
+        position: absolute;
+        top: 22px;
+        right: 10px;
+    }
+    .burger-nav span {
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 50px;
+        background: #fff;
+        border-radius: 5px;
+        opacity: 1;
+        right:20px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .burger-nav span:nth-child(1) {
+        top: 2px;
+    }
+      
+    .burger-nav span:nth-child(2) {
+        top: 15px;
+    }
+      
+    .burger-nav span:nth-child(3) {
+        top: 28px;
+    }
+    
+    .burger-nav.open span:nth-child(1) {
+        top: 18px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+      
+    .burger-nav.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+      
+    .burger-nav.open span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    .burger-list {
+        margin-top: 46px;
+        position: absolute;
+        top:81px;
+        left: 0;
+        display: block;
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 98%;
+        background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+        z-index: 20;
+    }
+    .burger-list ul li {
+        margin-right: 20px;
+        display: block;
+        border-bottom: 1px solid black;
+    }
+
+    .burger-list ul li a {
+        color: black;
+        font-size: 3.1rem;
+        font-weight: 700;
+    }
+    /* koniec - konfiguracja burger-nav */
+
     .container .main-title {
         font-size: 68px;
     }

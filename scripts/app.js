@@ -16,7 +16,7 @@
     };
 })(jQuery);
 
-
+var stateNav = false;
 $(document).scroll(function() {
     var y = $(this).scrollTop();
     //adding arrow on scroll
@@ -56,37 +56,87 @@ $(document).scroll(function() {
     }
 });
 
+var scroll = function(y) {
+    if (y < 20 && $( ".burger-list" ).length == 0) {
+        $('.burger-nav span').css('background-color', 'white');
+        $("#header").removeClass('fixed-header')
+    } else {
+        $("#header").addClass('fixed-header')
+        $('.burger-nav span').css('background-color', 'black')
+        $('.burger-list ul li a').css('color', 'black')
+    }
+}
 
+$('body').bind('touchmove', function(e) { 
+    var y = $(this).scrollTop(); // Replace this with your code.
+    console.log('y', y)
+    scroll(y)
+});
 
 
 //set scroll slide
 $(".see-more").click(function() {
-    $("html, body").animate({ scrollTop: 720 }, "slow");
+    $( ".nav-main" ).removeClass('burger-list')
+    $('.burger-nav').removeClass('open');
+    $("#header").addClass('fixed-header')   
+    $('.burger-nav span').css('background-color', 'black')
+    if($( ".burger-list" ).length == 0) {
+        $("html, body").animate({ scrollTop: 720 }, "slow");
+    } else {
+        $("html, body").animate({ scrollTop: 670 }, "slow");
+    }
+    // $( ".nav-main" ).removeClass('burger-list')
+    // $('.burger-nav').removeClass('open');
     return false;
 });
 
 $(".home").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
+    $( ".nav-main" ).toggleClass('burger-list')
+    $('.burger-nav').toggleClass('open');
     return false;
 });
 
 $(".about-us").click(function() {
-    $("html, body").animate({ scrollTop: 720 }, "slow");
+    if($( ".burger-list" ).length == 0) {
+        $("html, body").animate({ scrollTop: 720 }, "slow");
+    } else {
+        $("html, body").animate({ scrollTop: 670 }, "slow");
+    }
+    // $("html, body").animate({ scrollTop: 720 }, "slow");
+    $( ".nav-main" ).toggleClass('burger-list')
+    $('.burger-nav').toggleClass('open');
     return false;
 });
 
 $(".offer").click(function() {
-    $("html, body").animate({ scrollTop: 1200 }, "slow");
+    if($( ".burger-list" ).length == 0) {
+        $("html, body").animate({ scrollTop: 1230 }, "slow");
+    } else {
+        $("html, body").animate({ scrollTop: 1244 }, "slow");
+    }
+    // $("html, body").animate({ scrollTop: 1200 }, "slow");
+    $( ".nav-main" ).toggleClass('burger-list')
+    $('.burger-nav').toggleClass('open');
     return false;
 });
 
 $(".why-us").click(function() {
-    $("html, body").animate({ scrollTop: 1860 }, "slow");
+    if($( ".burger-list" ).length == 0) {
+        $("html, body").animate({ scrollTop: 1840 }, "slow");
+    } else {
+        $("html, body").animate({ scrollTop: 2016 }, "slow");
+    }
+    // $("html, body").animate({ scrollTop: 1860 }, "slow");
+    $( ".nav-main" ).toggleClass('burger-list')
+    $('.burger-nav').toggleClass('open');
     return false;
 });
 
 $(".contact").click(function() {
     $("html, body").animate({ scrollTop: 2875 }, "slow");
+    $( ".nav-main" ).toggleClass('burger-list')
+    $('.burger-nav').toggleClass('open');
     return false;
 });
 
@@ -137,6 +187,18 @@ win.scroll(function(event) {
     });   
 }); 
 // end of slide in on scroll
+
+//toogle burger-nav
+$( ".burger-nav" ).click(function() {
+    $("#header").addClass('fixed-header')   
+    $('.burger-nav span').css('background-color', 'black')
+    $('.burger-list ul li a').css('color', 'black')
+    $( ".nav-main" ).toggleClass('burger-list', 'slow')
+    $(this).toggleClass('open');
+    $('.burger-list ul li a').css('color', 'black')
+    $('.burger-nav span').css('color', 'black')
+    stateNav = !stateNav;
+}) 
 
 //type.js title
 var typed1 = new Typed('.main-title', {
