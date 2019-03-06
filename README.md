@@ -10,6 +10,7 @@ Projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
 - HTML5
 - Javascript
 - jQuery
+- Bootstrap
 
 
 ## Aby uruchomić lub przetestować mój projekt:
@@ -39,6 +40,7 @@ This is project for construction company **PERFEKT-BUD**.
 - HTML5
 - Javascript
 - jQuery
+- Bootstrap
 
 
 ## Installing and tests:
