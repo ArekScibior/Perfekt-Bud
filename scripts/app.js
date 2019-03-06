@@ -69,7 +69,7 @@ var scroll = function(y) {
 
 $('body').bind('touchmove', function(e) { 
     var y = $(this).scrollTop(); // Replace this with your code.
-    console.log('y', y)
+    //console.log('y', y)
     scroll(y)
 });
 

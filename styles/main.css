@@ -422,7 +422,10 @@ span.glyphicon-menu-down:hover {
     .main-article img {
         width: 600px;
     }
-
+    .social-media-row {
+        display: flex;
+        justify-content: space-between;
+    }
     /* koniec - index.html - ekran głowny */
 
     /* nasze-realizacje.html - realizacje */
