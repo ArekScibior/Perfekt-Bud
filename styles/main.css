@@ -212,6 +212,9 @@ footer .logo-footer img {
     margin-left: 20px;  
 }
 
+footer .social-link:hover {
+    text-decoration: none;
+}
 footer .col1 {
     float: left;
     width: 230px;
