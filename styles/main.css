@@ -176,6 +176,7 @@ body {
 .even-section {
     background-color: #000000;
     color: #ffff;
+    opacity: 0.9;
 }
 
 .little-grey-text {
@@ -426,6 +427,7 @@ span.glyphicon-menu-down:hover {
     }
     .even-section {
         height: 775px;
+        opacity: 0.9;
     }
 
     .main-article img {
