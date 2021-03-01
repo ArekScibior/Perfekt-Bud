@@ -76,10 +76,6 @@ body {
     text-decoration: #fff
 }
 
-/* .burger-nav {
-    display: none;
-} */
-
 /*---------------------------------------------*/
 /* content */
 /*---------------------------------------------*/
@@ -181,6 +177,49 @@ body {
 
 .little-grey-text {
     color: #b7b7b7 !important;
+}
+
+/*---------------------------------------------*/
+/* address */
+/*---------------------------------------------*/
+address {
+    margin: 0;
+}
+
+address .row {
+    min-height: 500px;
+}
+
+address .main-text {
+    margin-top: 175px;
+    margin-bottom: 175px;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+address .main-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address .main-article {
+    margin-top: 125px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #535252
+}
+
+address .main-second-article {
+    margin-top: 26px;
+    margin-bottom: 125px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #535252
 }
 
 /*---------------------------------------------*/
