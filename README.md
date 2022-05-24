@@ -22,7 +22,7 @@ Projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
 -zainstaluj potrzebne pakiety (bower install)
 -uruchom index.html/uruchom stronę poprzez serwer
 ```
-## Projekt można obejrzeć online: www.perfekt-bud.com
+## Projekt można obejrzeć online: https://www.perfekt-bud.com
 
 ## Autor:
 Arkadiusz Ścibior
@@ -52,7 +52,7 @@ This is project for construction company **PERFEKT-BUD**.
 -install necessary packages (bower install)
 -run index.html/run website with server
 ```
-## Online view project on: www.perfekt-bud.com
+## Online view project on: https://www.perfekt-bud.com
 
 ## Author:
 Arkadiusz Ścibior
